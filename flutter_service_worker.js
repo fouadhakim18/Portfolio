@@ -87,8 +87,8 @@ const RESOURCES = {
 "icons/ms-icon-150x150.png": "83b6de7f0a5fe9190f76b69514c69907",
 "icons/ms-icon-310x310.png": "cdeb542c8e5f1793223c910e1b9ba4dd",
 "icons/ms-icon-70x70.png": "22bdcc15cd3d44e09902c9a8e5721afc",
-"index.html": "88d0aee3a3e6a7ca1e4a2270ecccd884",
-"/": "88d0aee3a3e6a7ca1e4a2270ecccd884",
+"index.html": "874d4b21eaf3b4c5cf7264d8df0070fc",
+"/": "874d4b21eaf3b4c5cf7264d8df0070fc",
 "main.dart.js": "614af0f5aa3e986a221255ff0048e772",
 "manifest.json": "811d23e52f75d64cb7e0993ff97f894b",
 "version.json": "d351ae99551ba008177d734c54348c46"
