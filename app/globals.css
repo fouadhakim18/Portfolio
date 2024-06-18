@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.typed-cursor {
+  @apply text-4xl; /* Adjust this to the desired size */
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(14deg);
+  }
+  30% {
+    transform: rotate(-8deg);
+  }
+  40% {
+    transform: rotate(14deg);
+  }
+  50% {
+    transform: rotate(-4deg);
+  }
+  60% {
+    transform: rotate(10deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.wave-emoji {
+  display: inline-block;
+  animation-name: wave;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+}
+.bg-custom-gradient {
+  background: rgb(170, 54, 124);
+  background: linear-gradient(
+    90deg,
+    rgba(170, 54, 124, 1) 0%,
+    rgba(74, 47, 189, 1) 100%
+  );
+}
+.bg-btn {
+  background: rgb(254, 83, 187);
+  background: linear-gradient(
+    90deg,
+    rgba(254, 83, 187, 1) 17%,
+    rgba(252, 83, 187, 1) 21%,
+    rgba(244, 81, 187, 1) 31%,
+    rgba(74, 47, 189, 1) 68%
+  );
+}
+.gradient-text {
+  background: linear-gradient(
+    90deg,
+    rgba(9, 251, 211, 1) 0%,
+    rgba(254, 83, 187, 1) 100%
+  );
+  -webkit-background-clip: text; /* For Webkit-based browsers like Chrome and Safari */
+  -webkit-text-fill-color: transparent; /* Hide the original text color */
+  background-clip: text;
+  color: transparent; /* Ensure the text color is transparent */
+}
+
+.gradient-stroke {
+  stroke: url(#gradient); /* Reference the gradient defined below */
+}
+
+/* Define the linear gradient */
+#gradient {
+  stop-color: #7de7eb; /* Start color */
+  stop-color: #33bbcf; /* End color */
+}
+
+@layer base {
+  * {
+    @apply border-border !scroll-smooth;
+  }
+  body {
+    @apply bg-background text-foreground font-primary;
+  }
+  button {
+    @apply active:outline-none;
+  }
+}
+
+@layer utilities {
+  .heading {
+    @apply font-bold text-4xl md:text-5xl text-center;
+  }
+  .typewriter-text {
+    @apply text-4xl; /* Adjust the font size as needed */
+  }
+}
