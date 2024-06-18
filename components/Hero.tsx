@@ -45,7 +45,7 @@ const Hero = () => {
                     Hi there <span className="wave-emoji">👋</span>
                   </span>
                   <h1 className="text-[38px] leading-[1.1] md:text-[60px] font-semibold mb-6 mt-4">
-                    I'm <span>Hakim MAROC</span>
+                    I&apos;m <span>Hakim MAROC</span>
                   </h1>
                   <TypewriterEffect />
                   <p className="max-w-[550px] pt-8 pb-12 text-white/80 md:text-[18px] text-[16px] text-center lg:text-left">
