@@ -4,13 +4,14 @@ const Links = [
     path: "/",
   },
   {
-    name: "Projects",
-    path: "#projects",
-  },
-  {
     name: "About",
     path: "#about",
   },
+  {
+    name: "Projects",
+    path: "#projects",
+  },
+
   {
     name: "Contact",
     path: "#contact",
