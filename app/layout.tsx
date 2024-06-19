@@ -9,8 +9,7 @@ const jetBrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Hakim's Portfolio",
-  description: "Modern & Minimalist Portfolio",
+  title: "Hakim MAROC",
 };
 
 export default function RootLayout({
