@@ -72,7 +72,7 @@ export const projects = [
     title: "JAR Bricole",
     description:
       "Jar Bricole connects skilled handymen and service providers with clients in need",
-    link: "https://drive.google.com/drive/u/1/folders/1M74RleJH6p0Q2uu2Khx3P56dCwlkyVmI",
+    link: "https://drive.google.com/drive/folders/1M74RleJH6p0Q2uu2Khx3P56dCwlkyVmI?usp=sharing",
     iconLists: [
       "/svg/skills/flutter.svg",
       "/svg/skills/dart.svg",
@@ -86,7 +86,7 @@ export const projects = [
     title: "Quiz App",
     description:
       "Quizzo is an engaging and fun quiz app that puts yia enthusiast or just looking for a brain-teasing challenge, Quizzo has you covered.",
-    link: "https://drive.google.com/drive/u/1/folders/1Iw7D_1mAGHVfwuO-Xd0oVe-mQtUpxBgx",
+    link: "https://drive.google.com/drive/folders/1nWVIB67M3iOODbNs78AoWru0HFfxQVKU?usp=sharing",
     iconLists: [
       "/svg/skills/flutter.svg",
       "/svg/skills/dart.svg",
@@ -96,9 +96,9 @@ export const projects = [
   {
     id: 4,
     img: "/retentifyx.png",
-    title: "Retentify your employees",
+    title: "RetentifyX",
     description: "Your company HR Solution to reduce turnover rates",
-    link: "https://drive.google.com/drive/folders/1ErFq1GYRIlPfePyUKhRjihokKMD0VRBw?usp=drive_link",
+    link: "https://drive.google.com/drive/folders/1ErFq1GYRIlPfePyUKhRjihokKMD0VRBw?usp=sharing",
     iconLists: [
       "/svg/skills/flutter.svg",
       "/svg/skills/dart.svg",
@@ -110,7 +110,7 @@ export const projects = [
     id: 5,
     img: "/petshop2.png",
     title: "Pet Shop",
-    description: "Your online pet shop",
+    description: "your one-stop destination for all your pet needs!",
     link: "https://fouadhakim18.github.io/Pet-Shop/",
     iconLists: [
       "/svg/skills/html.svg",

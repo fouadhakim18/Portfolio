@@ -40,6 +40,7 @@ const config = {
           100: "#000319",
           200: "rgba(17, 25, 40, 0.75)",
           300: "rgba(255, 255, 255, 0.125)",
+          400: "#13162D",
         },
         white: {
           DEFAULT: "#FFF",
@@ -50,7 +51,7 @@ const config = {
           "100": "#E4ECFF",
         },
 
-        purple: "#CBACF9",
+        // purple: "#CBACF9",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -61,6 +62,9 @@ const config = {
         },
         secondary: {
           DEFAULT: "#FE53BB",
+        },
+        purple: {
+          DEFAULT: "#9781f6",
         },
 
         destructive: {

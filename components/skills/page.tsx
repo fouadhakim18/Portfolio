@@ -29,8 +29,8 @@ const Skills = () => {
   return (
     <div className={styles.appContainer}>
       <div className={styles.wrapper}>
-        <h1 className="heading">
-          <span className="text-purple">Skills</span>
+        <h1 className="heading text-white">
+          Technical <span className="text-purple">Skills</span>
         </h1>
         <div className={styles.items}>
           <div className={styles.marquee}>

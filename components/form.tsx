@@ -4,10 +4,8 @@ import React, { useState } from "react";
 import { validationSchema } from "@/utils/validations";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { toFormikValidationSchema } from "zod-formik-adapter";
-
-import { ToastContainer, toast } from "react-toastify";
-import Confetti from "react-confetti";
-
+import Lottie from "react-lottie";
+import successAnimation from "../public/success.json";
 type FormValues = {
   name: string;
   email: string;
@@ -16,8 +14,7 @@ type FormValues = {
 
 const ContactForm = () => {
   const [isLoading, setIsLoading] = useState(false);
-  const [showConfetti, setShowConfetti] = useState(false);
-
+  const [isSuccess, setIsSuccess] = useState(false);
   const handleSubmit = async (
     values: FormValues,
     {
@@ -30,6 +27,7 @@ const ContactForm = () => {
   ) => {
     try {
       setIsLoading(true);
+      setIsSuccess(false);
       // Send email using Nodemailer
       await fetch("/api/contact", {
         method: "POST",
@@ -43,16 +41,23 @@ const ContactForm = () => {
       resetForm();
 
       // Show success message or redirect to a thank you page
+      setIsSuccess(true);
       console.log("Email sent successfully!");
     } catch (error) {
       // Handle error
       console.error("Failed to send email:", error);
     } finally {
       setSubmitting(false);
-      toast.success("Form submitted successfully!");
-      setShowConfetti(true);
       setIsLoading(false);
     }
+  };
+  const defaultOptions = {
+    loop: false,
+    autoplay: true,
+    animationData: successAnimation,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
   };
 
   return (
@@ -122,34 +127,23 @@ const ContactForm = () => {
               <div className="p-2 w-full">
                 <button
                   disabled={isLoading}
-                  className="flex mx-auto text-white bg-primary/70 border-0 py-2 px-8 focus:outline-none hover:bg-primary/50 rounded text-lg"
+                  className="flex mx-auto text-white  bg-primary/70 border-0 py-2 px-8 focus:outline-none hover:bg-primary/50 rounded text-lg"
                 >
-                  Send
+                  {isLoading ? "Sending..." : "Send"}
                 </button>
               </div>
             </div>
           </div>
         </Form>
       </Formik>
-      <ToastContainer
-        position="top-center"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
-      />
 
-      {showConfetti && (
-        <Confetti
-          width={window.innerWidth}
-          height={window.innerHeight}
-          recycle={false}
-        />
+      {isSuccess && (
+        <div className="mt-4 text-center">
+          <Lottie options={defaultOptions} height={150} width={150} />
+          <div className="text-primary">
+            Your message has been sent successfully!
+          </div>
+        </div>
       )}
     </>
   );

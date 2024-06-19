@@ -9,8 +9,9 @@ const Footer = () => {
     <footer className="w-full mt-[100px] mb-[100px] md:mb-5" id="contact">
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[75vw] mb-5">
-          Ready to take <span className="text-purple">your</span> digital
-          presence to the next level?
+          Ready to take your{" "}
+          <span className="text-purple">digital presence</span> to the next
+          level?
         </h1>
         <p className="text-white-200 md:mt-10 mt-5 mb-[40px] text-center">
           Reach out to me today and let&apos;s discuss how I can help you
