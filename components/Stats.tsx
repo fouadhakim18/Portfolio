@@ -27,7 +27,7 @@ const Stats = () => {
           {stats.map((stat, i) => (
             <div
               key={i}
-              className={`flex-1 flex gap-4 items-center justify-center  ${
+              className={`flex-1 flex gap-4 items-center justify-center phone:py-5 phone:border phone:bg-gradient-to-r phone:from-indigo-500 phone:via-purple-500 phone:to-pink-500  phone:rounded-[8px]  ${
                 i !== 3 && "sm:border-r sm:pr-2"
               } ${i !== 0 && "pl-4"} `}
             >
