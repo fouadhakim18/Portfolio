@@ -9,7 +9,7 @@ import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 const RecentProjects = () => {
   return (
     <div className="py-20" id="projects">
-      <h1 className="heading">
+      <h1 className="heading phone:text-2xl tablet:text-4xl">
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
       </h1>

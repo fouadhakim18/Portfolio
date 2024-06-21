@@ -61,6 +61,11 @@
   width: clamp(10rem, 1rem + 40vmin, 12rem);
   padding: calc(clamp(10rem, 1rem + 30vmin, 30rem) / 10);
 }
+@media (max-width: 639px) {
+  .imageGroup {
+    width: clamp(8rem, 1rem + 40vmin, 9rem);
+  }
+}
 
 .image {
   background-color: #f1f1f1;
