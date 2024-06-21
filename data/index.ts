@@ -85,7 +85,7 @@ export const projects = [
     img: "/quizzo.png",
     title: "Quiz App",
     description:
-      "Quizzo is an engaging and fun quiz app that puts yia enthusiast or just looking for a brain-teasing challenge, Quizzo has you covered.",
+      "Quizzo is an engaging and fun quiz app that puts your knowledge to the test. Whether you're a enthusiast or just looking for a brain-teasing challenge, Quizzo has you covered.",
     link: "https://drive.google.com/drive/folders/1nWVIB67M3iOODbNs78AoWru0HFfxQVKU?usp=sharing",
     iconLists: [
       "/svg/skills/flutter.svg",

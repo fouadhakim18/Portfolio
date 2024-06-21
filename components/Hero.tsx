@@ -48,7 +48,7 @@ const Hero = () => {
                     I&apos;m <span>Hakim MAROC</span>
                   </h1>
                   <TypewriterEffect />
-                  <p className="max-w-[550px] pt-8 pb-12 text-white/80 md:text-[18px] phone:text-[14px] text-[16px] text-center lg:text-left">
+                  <p className="max-w-[550px] pt-6 pb-10 text-white/80 md:text-[17px] phone:text-[14px] text-[16px] text-center lg:text-left">
                     Flutter and Web developer, specializing in creating
                     high-performance, visually stunning applications.
                   </p>

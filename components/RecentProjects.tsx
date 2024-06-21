@@ -9,20 +9,20 @@ import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 const RecentProjects = () => {
   return (
     <div className="py-20" id="projects">
-      <h1 className="heading">
+      <h1 className="heading phone:text-2xl tablet:text-3xl">
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10 ">
+      <div className="flex flex-wrap items-center justify-center p-4 gap-x-16 mt-10 ">
         {projects.map((item) => (
           <div
-            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
+            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-80 w-[80vw]"
             key={item?.id}
           >
             <CardContainer className="inter-var">
               <CardBody className="bg-black-100 border-white/20 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]  w-auto h-auto rounded-xl py-3 px-4 border  ">
                 <CardItem translateZ="100" className="w-full mt-4">
-                  <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
+                  <div className="relative flex items-center justify-center sm:w-80 w-[80vw] overflow-hidden h-[20vh] lg:h-[26vh] mb-10">
                     {/* <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
@@ -39,7 +39,7 @@ const RecentProjects = () => {
                 </CardItem>
                 <CardItem
                   translateZ="50"
-                  className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1 mt-6"
+                  className="font-bold lg:text-[1.3rem] md:text-xl text-base line-clamp-1 mt-6"
                 >
                   {item?.title}
                 </CardItem>
@@ -48,7 +48,7 @@ const RecentProjects = () => {
                   className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
                 >
                   <p
-                    className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
+                    className="lg:text-[1rem] lg:font-normal font-light text-sm line-clamp-2"
                     style={{
                       color: "#BEC1DD",
                       margin: "1vh 0",
@@ -78,7 +78,7 @@ const RecentProjects = () => {
                   >
                     <a href={item?.link} target="_blank">
                       <div className="flex justify-center items-center">
-                        <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+                        <p className="flex lg:text-[1rem] md:text-xs text-sm text-purple">
                           Check Live
                         </p>
                         <FaLocationArrow className="ms-3" color="#CBACF9" />
