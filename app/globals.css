@@ -94,7 +94,7 @@
 
 @layer utilities {
   .heading {
-    @apply font-bold text-4xl md:text-5xl text-center;
+    @apply font-bold text-4xl md:text-5xl text-center phone:text-2xl tablet:text-4xl;
   }
   .typewriter-text {
     @apply text-4xl; /* Adjust the font size as needed */
