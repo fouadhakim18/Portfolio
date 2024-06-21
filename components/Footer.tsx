@@ -13,7 +13,7 @@ const Footer = () => {
           <span className="text-purple">digital presence</span> to the next
           level?
         </h1>
-        <p className="text-white-200 md:mt-10 mt-5 mb-[40px] text-center">
+        <p className="text-white-200 md:mt-10 mt-5 mb-[40px] text-center phone:text-[16px]">
           Reach out to me today and let&apos;s discuss how I can help you
           achieve your goals.
         </p>

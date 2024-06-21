@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <section className="text-gray-600 body-font relative">
       <div className="lg:w-full md:w-2/3 mx-auto">
-        <div className="flex flex-wrap -m-2 justify-center">
+        <div className="flex flex-wrap -m-2 justify-center px-3">
           <ContactForm />
           <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center flex flex-col items-center justify-center gap-6">
             {/* <p className="leading-normal my-5">

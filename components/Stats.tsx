@@ -27,7 +27,9 @@ const Stats = () => {
           {stats.map((stat, i) => (
             <div
               key={i}
-              className="flex-1 flex gap-4 items-center justify-center xl:justify-start"
+              className={`flex-1 flex gap-4 items-center justify-center xl:justify-start ${
+                i !== 3 && "sm:border-r sm:pr-2"
+              } ${i !== 0 && "pl-4"} `}
             >
               <CountUp
                 end={stat.num}
