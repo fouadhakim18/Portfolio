@@ -25,6 +25,7 @@ const Skills = () => {
     "/svg/skills/mysql.svg",
     "/svg/skills/python.svg",
   ];
+  const all = [...row1, ...row2];
 
   return (
     <div className={styles.appContainer}>
@@ -32,7 +33,7 @@ const Skills = () => {
         <h1 className="heading text-white">
           Technical <span className="text-purple">Skills</span>
         </h1>
-        <div className={styles.items}>
+        <div className={`${styles.items} phone:hidden block`}>
           <div className={styles.marquee}>
             <div className={styles.marqueeGroup}>
               {row1.map((el: string) => (
@@ -65,6 +66,13 @@ const Skills = () => {
               ))}
             </div>
           </div>
+        </div>
+        <div className="grid grid-cols-3 sm:hidden w-full">
+          {all.map((skill, index) => (
+            <div key={index} className="flex justify-center items-center p-4">
+              <img src={skill} className="w-11 h-11 object-contain" />
+            </div>
+          ))}
         </div>
       </div>
     </div>

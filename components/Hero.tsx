@@ -60,7 +60,7 @@ const Hero = () => {
                   <PhotoSm />
                 </div> */}
 
-                <div className="phone:mb-10 phone:-mt-12 ">
+                <div className="phone:mb-10 phone:-mt-12 phone:scale-[0.9]">
                   <Photo />
                 </div>
               </div>
