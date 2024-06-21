@@ -15,19 +15,19 @@ const stats = [
     text: "Technologies mastered",
   },
   {
-    num: 12000,
-    text: "Hours",
+    num: 5,
+    text: "Awards Received",
   },
 ];
 const Stats = () => {
   return (
     <section className="mt-[90px] pb-12 xl:pt-0 xl:pb-0">
       <div className="container mx-auto">
-        <div className="flex flex-wrap gap-6 max-w-[800px]mx-auto xl:max-w-none">
+        <div className="flex flex-wrap gap-6  mx-auto xl:max-w-none">
           {stats.map((stat, i) => (
             <div
               key={i}
-              className={`flex-1 flex gap-4 items-center justify-center xl:justify-start ${
+              className={`flex-1 flex gap-4 items-center justify-center  ${
                 i !== 3 && "sm:border-r sm:pr-2"
               } ${i !== 0 && "pl-4"} `}
             >
