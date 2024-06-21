@@ -33,7 +33,7 @@ const stats = [
 ];
 const Stats = () => {
   return (
-    <section className="mt-[90px] pb-12 xl:pt-0 xl:pb-0">
+    <section className="mt-[90px] xl:pt-0 xl:pb-0">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 mx-auto xl:max-w-none">
           {stats.map((stat, i) => (
