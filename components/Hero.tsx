@@ -44,16 +44,25 @@ const Hero = () => {
                   <span className="text-2xl ">
                     Hi there <span className="wave-emoji">👋</span>
                   </span>
-                  <h1 className="text-[38px] leading-[1.1] md:text-[60px] font-semibold mb-6 mt-4">
+                  <h1 className="text-[30px] leading-[1.1] md:text-[60px] font-semibold mb-6 mt-4">
                     I&apos;m <span>Hakim MAROC</span>
                   </h1>
                   <TypewriterEffect />
-                  <p className="max-w-[550px] pt-8 pb-12 text-white/80 md:text-[18px] text-[16px] text-center lg:text-left">
-                    Flutter developer, specializing in creating beautiful,
-                    user-friendly mobile apps.
+                  <p className="max-w-[550px] pt-8 pb-12 text-white/80 md:text-[18px] phone:text-[14px] text-[16px] text-center lg:text-left">
+                    Flutter and Web developer, specializing in creating
+                    high-performance, visually stunning applications.
                   </p>
                 </div>
-                <Photo />
+                {/* <div className="sm:block hidden">
+                  <Photo />
+                </div>
+                <div className="sm:hidden block">
+                  <PhotoSm />
+                </div> */}
+
+                <div className="phone:mb-10 phone:-mt-12 ">
+                  <Photo />
+                </div>
               </div>
               <div className="tablet:flex tablet:justify-center">
                 <MagicButton

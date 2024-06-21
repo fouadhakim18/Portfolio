@@ -33,6 +33,7 @@ const config = {
       screens: {
         tablet: { max: "1023px" },
         mt: { min: "640px", max: "1023px" },
+        phone: { max: "639px" },
       },
       colors: {
         black: {

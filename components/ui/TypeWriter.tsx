@@ -30,7 +30,12 @@ const TypewriterEffect = () => {
     };
   }, []);
 
-  return <span ref={typedRef} className="typewriter-text"></span>;
+  return (
+    <span
+      ref={typedRef}
+      className="typewriter-text phone:text-[26px] text-3xl"
+    ></span>
+  );
 };
 
 export default TypewriterEffect;
