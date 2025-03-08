@@ -13,7 +13,7 @@ import { FaDownload } from "react-icons/fa";
 const handleDownload = () => {
   console.log("downloading");
   const link = document.createElement("a");
-  link.href = "/my-cv.pdf";
+  link.href = "/Cv.pdf";
   link.download = "CV.pdf";
   document.body.appendChild(link);
   link.click();
